@@ -1,0 +1,8 @@
+#FROM scratch
+#COPY bin/ /bin/
+FROM ubi7/ubi
+USER 500
+
+ENTRYPOINT ["/bin/date"]
+CMD ["+%A %d.%m.%Y %H:%M:%S"]
+

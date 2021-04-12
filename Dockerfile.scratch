@@ -1,0 +1,6 @@
+FROM scratch
+COPY bin/echo bin/sh /bin/
+USER 0
+WORKDIR /bin/
+ENTRYPOINT ["/bin/echo"]
+CMD ["Hello"]
